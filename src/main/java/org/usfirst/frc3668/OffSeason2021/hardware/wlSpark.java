@@ -1,4 +1,4 @@
-package frc.robot.hardware;
+package org.usfirst.frc3668.OffSeason2021.hardware;
 
 import com.revrobotics.CANEncoder;
 import com.revrobotics.CANError;
