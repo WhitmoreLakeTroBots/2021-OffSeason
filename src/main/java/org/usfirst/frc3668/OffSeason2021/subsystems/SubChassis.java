@@ -15,14 +15,15 @@ import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 /**
  *
  */
-public class subChassis extends Subsystem {
+public class SubChassis extends Subsystem {
 
   public static wlSpark leftDriveSpark;
   public static wlSpark rightDriveSpark;
   public static TalonSRX leftFollowerTalon;
   public static TalonSRX rightFollowerTalon;
   public DifferentialDrive m_Drive;
-  public subChassis() {
+ 
+  public SubChassis() {
     leftDriveSpark = new wlSpark(13, MotorType.kBrushless);
     rightDriveSpark = new wlSpark(16, MotorType.kBrushless);
     DifferentialDrive m_Drive = new DifferentialDrive(leftDriveSpark, rightDriveSpark);
