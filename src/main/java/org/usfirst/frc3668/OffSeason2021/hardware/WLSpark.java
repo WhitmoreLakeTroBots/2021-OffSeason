@@ -1,6 +1,5 @@
 package org.usfirst.frc3668.OffSeason2021.hardware;
 
-
 import com.revrobotics.CANEncoder;
 import com.revrobotics.CANError;
 import com.revrobotics.CANPIDController;
@@ -12,11 +11,11 @@ import com.revrobotics.CANSparkMax.IdleMode;
 import com.revrobotics.*;
 //import com.revrobotics.*;
 
-public class wlSpark extends CANSparkMax {
+public class WLSpark extends CANSparkMax {
   public double inverted = 1.0;
   public double encoder_zero_offset = 0.0;
 
-  public wlSpark(int CAN_ID, MotorType motor_type) {
+  public WLSpark(int CAN_ID, MotorType motor_type) {
     super(CAN_ID, motor_type);
   }
 
